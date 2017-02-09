@@ -22,5 +22,7 @@
 
     <cache alias="fr.latverius.jhipstertest.social.SocialUserConnection" uses-template="simple"/>
 
+    <cache alias="fr.latverius.jhipstertest.domain.WishList" uses-template="simple"/>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </config>
