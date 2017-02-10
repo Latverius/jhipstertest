@@ -31,8 +31,18 @@ public class Wish implements Serializable {
     @DecimalMin(value = "0")
     @Column(name = "price", precision=10, scale=2, nullable = false)
     private BigDecimal price;
+    
+    private int prioriy;
 
-    @ManyToOne
+    public int getPrioriy() {
+		return prioriy;
+	}
+
+	public void setPrioriy(int prioriy) {
+		this.prioriy = prioriy;
+	}
+
+	@ManyToOne
     private WishList wishList;
 
     public Long getId() {
